@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>List of users</h1>
+    <div>
+      <label for="sortParam">Sort:</label>
+      <select id="sortParam">
+        <option value="name">Name</option>
+        <option value="email">Email</option>
+      </select>
+      <br />
+      <label for="filterCriteria">Filter:</label>
+      <input
+        type="text"
+        id="filterCriteria"
+        placeholder="Enter filter criteria"
+      />
+    </div>
+    <div id="users"></div>
+    <button id="refreshButton">Update</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
